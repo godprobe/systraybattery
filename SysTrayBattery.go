@@ -1,28 +1,5 @@
 package main
 
-// SysTrayBattery
-//  by "godprobe" (j. alexander)
-// Adapted and cleaned up from ChatGPT prompts, June 2023.
-//
-// Creates an item in the System Tray that has an icon,
-// and a message with the percentage of charge remaining
-// on the first encountered system battery.
-//  battery.Get(0)
-//
-// Currently supports only Windows.
-//  The icon byte data is an .ico file, which should be cross-platform.
-//  The systray.SetTooltip() function is only supported by Windows and Mac.
-//  Tested only on Win 11 Home, 64-bit, on a $100 Black Friday laptop.
-//
-// The icon is borrowed from getlantern/systray/example/icon.
-//  This should be updated in future versions:
-//  - Use a different icon (a battery, for example).
-//  - A text-to-image representation of the battery percentage.
-//  - If possible, create a half-icon set of images for the nunbers 0-9;
-//   merge them to create the battery percentage icon.
-//  - Overlay the text on top of a battery image.
-//  - Create the battery image dynamically, from full to empty.
-
 import (
 	"fmt"
 	"time"
